@@ -1,0 +1,2 @@
+# konfiguraceaplikace
+Konfigurace aplikace
