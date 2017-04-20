@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="konfigurace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sekce"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sekce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="kategorie_ovladani"/>
+        <xs:element name="kategorie_zobrazeni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kategorie_ovladani">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nastaveni_pohledu"/>
+        <xs:element name="nastaveni_pohybu"/>
+        <xs:element name="nastaveni_akce"/>
+        <xs:element name="nastaveni_ostatni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_pohledu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_pohled"/>
+        <xs:element name="alternativni_pohled"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_pohled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pohled"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pohled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vlevo" type="xs:string"/>
+        <xs:element name="vpravo" type="xs:string"/>
+        <xs:element name="vzhuru" type="xs:string"/>
+        <xs:element name="dolu" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="citlivost" type="xs:string" use="required"/>
+      <xs:attribute name="invertovatosy" type="xs:string" use="required"/>
+      <xs:attribute name="ovladac" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alternativni_pohled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pohled"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_pohybu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_pohyb"/>
+        <xs:element name="klasicky_pohyb"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_pohyb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dopredu" type="xs:string"/>
+        <xs:element name="dozadu" type="xs:string"/>
+        <xs:element name="doleva" type="xs:string"/>
+        <xs:element name="doprava" type="xs:string"/>
+        <xs:element name="skok" type="xs:string"/>
+        <xs:element name="skrceni" type="xs:string"/>
+        <xs:element name="chuze" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+      <xs:attribute name="ovladac" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="klasicky_pohyb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dopredu" type="xs:string"/>
+        <xs:element name="dozadu" type="xs:string"/>
+        <xs:element name="doleva" type="xs:string"/>
+        <xs:element name="doprava" type="xs:string"/>
+        <xs:element name="skok" type="xs:string"/>
+        <xs:element name="skrceni" type="xs:string"/>
+        <xs:element name="chuze" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+      <xs:attribute name="ovladac" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_akce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_akce"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_akce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="utokprimarni" type="xs:string"/>
+        <xs:element name="utoksekundarni" type="xs:string"/>
+        <xs:element name="priblizeni" type="xs:string"/>
+        <xs:element name="nabiti" type="xs:string"/>
+        <xs:element name="pouzit" type="xs:string"/>
+        <xs:element name="dalsizbran" type="xs:string"/>
+        <xs:element name="predchozizbran" type="xs:string"/>
+        <xs:element name="poslednizbran" type="xs:string"/>
+        <xs:element name="upustitzbran" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+      <xs:attribute name="ovladac" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_ostatni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_ostatni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_ostatni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="svitilna" type="xs:string"/>
+        <xs:element name="sebevrazda" type="xs:string"/>
+        <xs:element name="pauza" type="xs:string"/>
+        <xs:element name="ukazatskore" type="xs:string"/>
+        <xs:element name="zprava" type="xs:string"/>
+        <xs:element name="hlasovazprava" type="xs:string"/>
+        <xs:element name="nakup" type="xs:string"/>
+        <xs:element name="rychlynakup" type="xs:string"/>
+        <xs:element name="zmenittym" type="xs:string"/>
+        <xs:element name="opustithru" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kategorie_zobrazeni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nastaveni_rozliseni"/>
+        <xs:element name="nastaveni_jas"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_rozliseni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_rozliseni"/>
+        <xs:element name="nizke_rozliseni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_rozliseni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rozliseni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rozliseni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sirka" type="xs:string"/>
+        <xs:element name="vyska" type="xs:string"/>
+        <xs:element name="antialiasing" type="xs:string"/>
+        <xs:element name="orientace" type="xs:string"/>
+        <xs:element name="pomerstran" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nizke_rozliseni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rozliseni"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nastaveni_jas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="defaultni_jas"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultni_jas">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="hodnota" type="xs:string"/>
+        <xs:element name="hloubkabarev" type="xs:string"/>
+        <xs:element name="hwakcelerace" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="nadpis" type="xs:string" use="required"/>
+      <xs:attribute name="napoveda" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konfigurace
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="konfiguracePrusa.xsd">
+    
+    <sekce id="nastaveni" nadpis="Nastavení" napoveda="Nastavení aplikace. " verze="1.0" druh="FPS">
+        <kategorie_ovladani id="ovladani" nadpis="Nastavení ovládání" napoveda="Souhrn nastavení ovládání.">
+                <nastaveni_pohledu id="ovladani.pohled" nadpis="Nastavení pohledu" napoveda="Nastavení kláves pohledu.">
+                    <defaultni_pohled id="pohled.defaultni" nadpis="Defaultní pohled" napoveda="Obnoví původní nastavení pohledu">
+                        <pohled ovladac="mys" citlivost="3" invertovatosy="ne">
+                            <vlevo>MOUSEAXIS_X-</vlevo>
+                            <vpravo>MOUSEAXIS_X+</vpravo>
+                            <vzhuru>MOUSEAXIS_Y+</vzhuru>
+                            <dolu>MOUSEAXIS_Y-</dolu>
+                        </pohled>
+                    </defaultni_pohled>
+                    <alternativni_pohled  id="pohled.alternativni" nadpis="Alternativní pohled" napoveda="Alternativní nastavení pohledu">
+                        <pohled ovladac="klavesnice" citlivost="3" invertovatosy="ne">
+                            <vlevo>NUM_4</vlevo>
+                            <vpravo>NUM_6</vpravo>
+                            <vzhuru>NUM_8</vzhuru>
+                            <dolu>NUM_2</dolu>
+                        </pohled>
+                    </alternativni_pohled>
+                </nastaveni_pohledu>
+                <nastaveni_pohybu id="ovladani.pohyb" nadpis="Nastavení pohybu" napoveda="Nastavení kláves pohybu.">
+                    <defaultni_pohyb id="pohyb.defaultni" nadpis="Defaultní pohyb" napoveda="Obnoví původní nastavení pohybu" ovladac="klavesnice">
+                        <dopredu>W</dopredu>
+                        <dozadu>S</dozadu>
+                        <doleva>A</doleva>
+                        <doprava>D</doprava>
+                        <skok>SPACE</skok>
+                        <skrceni>CTRL</skrceni>
+                        <chuze>SHIFT</chuze>
+                    </defaultni_pohyb>
+                    <klasicky_pohyb id="pohyb.klasicke" nadpis="Klasické nastavení pohybu" napoveda="Nastaví klasické nastavení pohybu" ovladac="klavesnice">
+                        <dopredu>ARROW_UP</dopredu>
+                        <dozadu>ARROW_DOWN</dozadu>
+                        <doleva>ARROW_L</doleva>
+                        <doprava>ARROW_R</doprava>
+                        <skok>NUM_0</skok>
+                        <skrceni>CTRL</skrceni>
+                        <chuze>SHIFT</chuze>
+                    </klasicky_pohyb>
+                </nastaveni_pohybu>
+                <nastaveni_akce id="ovladani.akce" nadpis="Akční klávesy" napoveda="Nastavení akčních kláves">
+                    <defaultni_akce id="akce.defaultni" nadpis="Defaultní nastavení" napoveda="Obnoví původní nastavení akčních kláves." ovladac="klavesnice">
+                        <utokprimarni>MOUSE1</utokprimarni>
+                        <utoksekundarni>MOUSE3</utoksekundarni>
+                        <priblizeni>MOUSE2</priblizeni>
+                        <nabiti>R</nabiti>
+                        <pouzit>E</pouzit>
+                        <dalsizbran>MWHEELUP</dalsizbran>
+                        <predchozizbran>MWHELLDOWN</predchozizbran>
+                        <poslednizbran>Q</poslednizbran>
+                        <upustitzbran>G</upustitzbran>
+                    </defaultni_akce>
+                </nastaveni_akce>
+                <nastaveni_ostatni id="ovladani.ostatni" nadpis="Ostatní klávesy" napoveda="Nastavení ostatních kláves.">
+                    <defaultni_ostatni id="ostatni.defaultni" nadpis="Defaultní nastavení" napoveda="Obnoví původní nastavení ostatních kláves.">
+                        <svitilna>F</svitilna>
+                        <sebevrazda>K</sebevrazda>
+                        <pauza>P</pauza>
+                        <ukazatskore>TAB</ukazatskore>
+                        <zprava>Z</zprava>
+                        <hlasovazprava>V</hlasovazprava>
+                        <nakup>B</nakup>                
+                        <rychlynakup>H</rychlynakup>
+                        <zmenittym>M</zmenittym>
+                        <opustithru>Q</opustithru>
+                    </defaultni_ostatni>
+                </nastaveni_ostatni>
+        </kategorie_ovladani>
+        <kategorie_zobrazeni id="zobrazeni" nadpis="Nastavení zobrazení" napoveda="Souhrn nastavení zobrazení">
+                <nastaveni_rozliseni id="zobrazeni.rozliseni" nadpis="Nastavení rozlišení" napoveda="Výběr rozlišení obrazovky.">
+                    <defaultni_rozliseni id="rozliseni.defaultni" nadpis="Defaultní rozlišení" napoveda="Obnoví původní rozlišení">
+                        <rozliseni>
+                            <sirka>1024</sirka>
+                            <vyska>768</vyska>
+                            <antialiasing>2</antialiasing>
+                            <orientace>nasirku</orientace>
+                            <pomerstran>4:3</pomerstran>
+                        </rozliseni>
+                    </defaultni_rozliseni>
+                    <nizke_rozliseni id="rozliseni.nizke" nadpis="Nízké rozlišení" napoveda="Nastaví nízké rozlišení">
+                        <rozliseni>
+                            <sirka>640</sirka>
+                            <vyska>480</vyska>
+                            <antialiasing>0</antialiasing>
+                            <orientace>nasirku</orientace>
+                            <pomerstran>4:3</pomerstran>
+                        </rozliseni>
+                    </nizke_rozliseni>
+                </nastaveni_rozliseni>
+                <nastaveni_jas id="zobrazeni.jas" nadpis="Nastavení jasu" napoveda="Nastavení jasu.">
+                    <defaultni_jas  id="jas.defaultni" nadpis="Defaultní jas" napoveda="Obnoví původní jas.">>
+                        <hodnota>4</hodnota>
+                        <hloubkabarev>32</hloubkabarev>
+                        <hwakcelerace>ANO</hwakcelerace>
+                    </defaultni_jas>
+                </nastaveni_jas>
+        </kategorie_zobrazeni>
+    </sekce>
+</konfigurace>

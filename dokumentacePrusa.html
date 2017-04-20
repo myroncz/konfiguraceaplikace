@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konfigurace hry</title>
+  </head>
+  <body>
+    <header>
+      <h1>Konfigurace hry</h1>
+      
+      <nav>
+        <ul>
+          <li> <a href="#uvod">Úvod</a></li>
+          <li> <a href="#metodika">Metodika</a> </li>
+          <li><a href="#atributy">Atributy</a></li>
+          <li> <a href="#elementy">Elementy</a></li>
+          <li><a href="#nastaveni">Vlastní nastavení</a></li>
+          <li>
+            <a href="#trans">Transformace</a>
+          </li>
+
+          <li> <a href="#zaver">Závěr</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section><h2 id="uvod">Úvod</h2><p>Konfigurace hry je popisem ovládání hry a základního nastavení zobrazení</p>  
+        </section>
+        <section>
+          <h2 id="metodika">Metodika</h2>
+          Konfigurace je strukturována do sekcí, které rozlišují soubor nastavení podle účelové funkce. Sekce se větví na kategorie, a ty na jednotlivá nastavení.
+        </article>
+        <atricle>
+            <h2 id="atributy">Atributy
+            </h2>
+            <ol>
+                <li>id</li>
+                <li>nadpis</li>
+                <li>napoveda</li>
+                <li>verze</li>
+                <li>druh</li>
+                <li>ovladac</li>
+                <li>citlivost</li>
+                <li>invertovany</li>
+            </ol>
+
+        </atricle>
+        <article>
+          <h2 id="elementy">Elementy
+          </h2>
+          <ol>
+             <li>sekce</li>
+<li>kategorie_ovladani</li>
+<li>nastaveni_pohledu</li>
+<li>defaultni_pohled</li>
+<li>pohled</li>
+<li>vlevo</li>
+<li>vpravo</li>
+<li>vzhuru</li>
+<li>dolu</li>
+<li>alternativni_pohled</li>
+<li>nastaveni_pohybu</li>
+<li>defaultni_pohyb</li>
+<li>dopredu</li>
+<li>dozadu</li>
+<li>doleva</li>
+<li>doprava</li>
+<li>skok</li>
+<li>skrceni</li>
+<li>chuze</li>
+<li>klasicky_pohyb</li>
+<li>nastaveni_akce</li>
+<li>defaultni_akce</li>
+<li>utokprimarni</li>
+<li>utoksekundarni</li>
+<li>priblizeni</li>
+<li>nabiti</li>
+<li>pouzit</li>
+<li>dalsizbran</li>
+<li>predchozizbran</li>
+<li>poslednizbran</li>
+<li>upustitzbran</li>
+<li>nastaveni_ostatni</li>
+<li>defaultni_ostatni</li>
+<li>svitilna</li>
+<li>sebevrazda</li>
+<li>pauza</li>
+<li>ukazatskore</li>
+<li>nakup</li>
+<li>rychlynakup</li>
+<li>zmenittym</li>
+<li>opustithru</li>
+<li>kategorie_zobrazeni</li>
+<li>nastaveni_rozliseni</li>
+<li>defaultni_rozliseni</li>
+<li>rozliseni</li>
+<li>sirka</li>
+<li>vyska</li>
+<li>antialiasing</li>
+<li>orientace</li>
+<li>pomerstran</li>
+<li>nizke_rozliseni</li>
+<li>nastaveni_jas</li>
+<li>defaultni_jas</li>
+<li>hodnota</li>
+<li>hloubkabarev</li>
+<li>hwakcelerace</li>
+
+          </ol>
+<br/>
+        </article>
+        <article>
+            <h2 id="nastaveni">Vlastní nastavení</h2>
+            <h3>Nastaven&iacute; pohledu</h3>
+<p>
+<i>Nastaven&iacute; kl&aacute;ves pohledu.</i>
+</p>
+<table border="1" style="font:18px verdana">
+<tr bgcolor="white"></tr>
+<tr>
+<th>N&aacute;zev</th><th>Defaultn&iacute;</th><th>Alternativn&iacute;</th>
+</tr>
+<tr>
+<td>Pohled vzhuru </td><td>MOUSEAXIS_Y+</td><td>NUM_8</td>
+</tr>
+<tr>
+<td>Pohled dolu </td><td>MOUSEAXIS_Y-</td><td>NUM_2</td>
+</tr>
+<tr>
+<td>Pohled vlevo </td><td>MOUSEAXIS_X-</td><td>NUM_4</td>
+</tr>
+<tr>
+<td>Pohled vpravo </td><td>MOUSEAXIS_X+</td><td>NUM_6</td>
+</tr>
+</table>
+<h3>Nastaven&iacute; pohybu</h3>
+<p>
+<i>Nastaven&iacute; kl&aacute;ves pohybu.</i>
+</p>
+<table border="1" style="font:18px verdana">
+<tr bgcolor="white"></tr>
+<tr>
+<th>N&aacute;zev</th><th>Defaultn&iacute;</th><th>Alternativn&iacute;</th>
+</tr>
+<tr>
+<td>Pohyb dopredu </td><td>W</td><td>ARROW_UP</td>
+</tr>
+<tr>
+<td>Pohyb dozadu: </td><td>S</td><td>ARROW_DOWN</td>
+</tr>
+<tr>
+<td>Pohyb doleva </td><td>A</td><td>ARROW_L</td>
+</tr>
+<tr>
+<td>Pohyb doprava </td><td>D</td><td>ARROW_R</td>
+</tr>
+</table>
+<h3>Akčn&iacute; kl&aacute;vesy</h3>
+<p>
+<i>Nastaven&iacute; akčn&iacute;ch kl&aacute;ves</i>
+</p>
+<table border="1" style="font:18px verdana">
+<tr bgcolor="white"></tr>
+<tr>
+<th>N&aacute;zev</th><th>Defaultn&iacute;</th>
+</tr>
+<tr>
+<td>Prim&aacute;rn&iacute; &uacute;rok </td><td>MOUSE1</td>
+</tr>
+<tr>
+<td>Sekund&aacute;rn&iacute; &uacute;rok </td><td>MOUSE3</td>
+</tr>
+<tr>
+<td>Přibl&iacute;žen&iacute;</td><td>MOUSE2</td>
+</tr>
+<tr>
+<td>Nabit&iacute;</td><td>R</td>
+</tr>
+<tr>
+<td>Použ&iacute;t</td><td>E</td>
+</tr>
+<tr>
+<td>Dalš&iacute; zbraň</td><td>MWHEELUP</td>
+</tr>
+<tr>
+<td>Předchoz&iacute; zbraň</td><td>MWHELLDOWN</td>
+</tr>
+<tr>
+<td>Posledn&iacute; zbraň</td><td>Q</td>
+</tr>
+<tr>
+<td>Upustit zbraň</td><td>G</td>
+</tr>
+</table>
+<h3>Ostatn&iacute; kl&aacute;vesy</h3>
+<p>
+<i>Nastaven&iacute; ostatn&iacute;ch kl&aacute;ves.</i>
+</p>
+<table border="1" style="font:18px verdana">
+<tr bgcolor="white"></tr>
+<tr>
+<th>N&aacute;zev</th><th>Defaultn&iacute;</th>
+</tr>
+<tr>
+<td>Sv&iacute;tilna</td><td>F</td>
+</tr>
+<tr>
+<td>Sebevražda</td><td>K</td>
+</tr>
+<tr>
+<td>Pauza</td><td>P</td>
+</tr>
+<tr>
+<td>Uk&aacute;zat sk&oacute;re</td><td>TAB</td>
+</tr>
+<tr>
+<td>Zpr&aacute;va</td><td>Z</td>
+</tr>
+<tr>
+<td>Hlasov&aacute; zpr&aacute;va</td><td>V</td>
+</tr>
+<tr>
+<td>N&aacute;kup</td><td>B</td>
+</tr>
+<tr>
+<td>Rychl&yacute; n&aacute;kup</td><td>H</td>
+</tr>
+<tr>
+<td>Změnit t&yacute;m</td><td>M</td>
+</tr>
+<tr>
+<td>Opustit hru</td><td>Q</td>
+</tr>
+</table>
+        </article>
+        <article><h2 id="trans">Transformace</h2><p>Výsledkem transformace pomocí XSLT souboru je HTML výpis kláves přiřazených k funkcím v tabulkách s drobným popiskem. Vypisování je prováděno pomocí funkce xsl:value-of. </p>  
+</article>
+        <article><h2 id="zaver">Závěr</h2><p>Při vytváření byla jako zdroj použita stránka <a href="https://www.w3schools.com/">w3schools.com</a> a dále <a href="https://www.jakpsatweb.cz/">Jakpsatweb.cz</a>. Zbytek informací byl čerpán z přednášek a cvičení.</p>  
+</article>
+      </section>
+    </main>
+    <footer>
+        <p> <a href="https://github.com/myroncz/konfiguraceaplikace">Projekt na GitHub</a> </p>
+      <p>&copy;  Miroslav Průša, 2017</p>
+    </footer>
+  </body>
+</html>
